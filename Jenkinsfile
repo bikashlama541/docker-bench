@@ -1,9 +1,7 @@
 pipeline {
   agent any
-  {
-    stages{
-        stage('Docker Bench Mark')
-          { 
+  stages {
+        stage('Docker Bench Mark'){ 
             steps
              { 
                 sh 'echo "Hello world"'
@@ -11,4 +9,4 @@ pipeline {
             }  
     }
  }
-}
+
