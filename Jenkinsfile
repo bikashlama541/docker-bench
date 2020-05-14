@@ -3,7 +3,7 @@ pipeline {
   parameters {
     string(name: 'IMAGENAME')
   }
-  }
+  
   stages {
         stage('Docker Bench Mark'){ 
             steps
@@ -27,4 +27,4 @@ pipeline {
               
     }
  }
-
+}
