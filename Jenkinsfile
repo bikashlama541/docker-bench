@@ -19,6 +19,9 @@ pipeline {
             always {
                   archiveArtifacts 'test-log.log'
                    }
+            always { 
+                   cleanWs()
+                   }
                 }
             
             }  
