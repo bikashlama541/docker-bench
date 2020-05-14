@@ -19,10 +19,12 @@ pipeline {
             always {
                   archiveArtifacts 'test-log.log'
                    }
+          post {
             always { 
                    cleanWs()
                    }
                 }
+          }
             
               
     }
