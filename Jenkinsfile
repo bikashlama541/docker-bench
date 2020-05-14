@@ -11,6 +11,12 @@ pipeline {
                 // sh 'rm test-log.log'
                 sh 'docker cp $(docker ps -aq | head -1):/test-log.log .'
               }  
+          post {
+            always {
+                  archiveArtifacts 'test-log.log'
+                   }
+                }
+            
             }  
     }
  }
