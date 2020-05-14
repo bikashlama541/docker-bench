@@ -1,5 +1,9 @@
 pipeline {
   agent any
+  parameters {
+    string(name: 'IMAGENAME')
+  }
+  }
   stages {
         stage('Docker Bench Mark'){ 
             steps
